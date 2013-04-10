@@ -1,4 +1,6 @@
 ckeditor.filebrowser
 ====================
 
-The java port version ckeditor grails plugin
+The JSP taglibs for ckeditor and filebrowser.
+
+[tutorial](http://siberhus.com/2013/04/ckeditor-filebrowser/)
