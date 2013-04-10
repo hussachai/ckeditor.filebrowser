@@ -1,0 +1,9 @@
+*.class
+*.log
+
+
+.settings
+target/
+.classpath
+.project
+jetty_run_jrebel.bat

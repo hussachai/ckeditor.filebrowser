@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5">
+
+	<description>
+		CKEditor Taglib with File manager
+	</description>
+	<display-name>ckeditor.filebrowser</display-name>
+	
+	<listener>
+		<listener-class>com.siberhus.web.ckeditor.CkeditorConfigurationHolder</listener-class>
+	</listener>
+	
+	<servlet>
+		<servlet-name>ck_sfm</servlet-name>
+		<servlet-class>com.siberhus.web.ckeditor.servlet.StandardFileManagerConnectorServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ck_sfm</servlet-name>
+		<url-pattern>/ck/sfm/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ck_ofm</servlet-name>
+		<servlet-class>com.siberhus.web.ckeditor.servlet.OpenFileManagerConnectorServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ck_ofm</servlet-name>
+		<url-pattern>/ck/ofm/*</url-pattern>
+	</servlet-mapping>
+	
+	
+  	<jsp-config>
+  		<!-- 
+        <taglib>
+			<taglib-uri>http://www.siberhus.com/taglibs/ckeditor</taglib-uri>
+			<taglib-location>/WEB-INF/ckeditor.tld</taglib-location>
+        </taglib>
+        <taglib>
+			<taglib-uri>http://www.siberhus.com/taglibs/ckeditor/ofm</taglib-uri>
+			<taglib-location>/WEB-INF/ckeditor-ofm.tld</taglib-location>
+        </taglib>
+         -->
+	</jsp-config>
+	
+</web-app>

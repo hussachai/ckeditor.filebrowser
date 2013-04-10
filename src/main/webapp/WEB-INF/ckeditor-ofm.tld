@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+	version="2.0">
+	
+	<description>SiberHus Tags Library - Open File Manager Plugin for CKEditor</description>
+	<display-name>OFM Tags Library</display-name>
+	<!-- 3.5.2.0 -->
+	<tlib-version>3.5</tlib-version>
+	<short-name>siberhus-ckeditor-ofm</short-name>
+	<uri>http://www.siberhus.com/taglibs/ckeditor/ofm</uri>
+	
+	<tag>
+		<description></description>
+		<name>baseUrl</name>
+		<tag-class>com.siberhus.web.ckeditor.tags.OfmBaseUrlTagHandler</tag-class>
+		<body-content>scriptless</body-content>
+		<attribute>
+			<name>space</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>type</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+	
+	<tag>
+		<description></description>
+		<name>currentLocale</name>
+		<tag-class>com.siberhus.web.ckeditor.tags.OfmCurrentLocaleTagHandler</tag-class>
+		<body-content>empty</body-content>
+	</tag>
+	
+	
+</taglib>
